@@ -36,12 +36,13 @@
     align-items: center;
 }
 .feedback-coment h5 span{
-    color: #e9a209;
+    color: var(--color-ambar);
 }
 .container-feedback{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 50px;
 }
 .avatar{
     width: 50px;

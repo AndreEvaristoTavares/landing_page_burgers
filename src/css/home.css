@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 90px);
+    /* min-height: calc(100vh - 90px); */
 }
 
 #cta{
@@ -30,7 +30,7 @@
 
 }
 .title span{
-    color: #e9a209;
+    color: var(--color-ambar);
 }
 .cta-buttons{
     gap: 24px;
@@ -49,21 +49,4 @@
     border-radius: 40% 30% 0 20%;
 }
 
-@media screen and (max-width:1024px) {
-    #home{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 0;
-    }
-    #cta{
-        width: 100%;
-    }
-    .banner{
-        display: none;
-    }
-    
 
-}

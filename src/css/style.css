@@ -3,6 +3,12 @@
 @import url('./home.css');
 @import url('./cardapio.css');
 @import url('./depoimentos.css');
+:root{
+    --color-perola:#fff9ea;
+    --color-dourado:#ffcb45;
+    --color-ambar:#e9a209;
+    --color-amarelo-pastel:#f8d477;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -14,7 +20,7 @@ html {
     box-sizing: border-box;
 }
 body{
-    background-color: #FFF9EA;
+    background-color: var(--color-perola);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +38,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffcb45;
+    background-color: var(--color-dourado);
     border-radius: 12px;
     padding: 10px 14px;
     cursor: pointer;
@@ -41,7 +47,7 @@ a {
     transition: background-color .3s ease;
 }
 .btn-default:hover{
-    background-color: #f8d477;
+    background-color: var(--color-amarelo-pastel);
 }
 .social-media-buttons a{
     display: flex;
@@ -56,11 +62,35 @@ a {
     color: #1d1d1d;
 }
 .section-title{
-    color: #e9a209;
+    color: var(--color-ambar);
     font-size: 1.563rem;
     text-align: center;
 }
 .section-subtitle{
     font-size: 2.1875rem;
     text-align: center;
+}
+@media screen and (max-width:1024px) {
+    #home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    #cta{
+        width: 100%;
+    }
+    .banner{
+        display: none;
+    }
+    .img-chef{
+        display: none;
+    }
+    footer{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
 }
